@@ -1,0 +1,73 @@
+Please fix and finalize my Albion Online crafting profit calculator web app with the following requirements:
+
+---
+
+✅ 1) Crafting Recipes  
+- Use accurate crafting materials and quantities for every item.  
+- If the Albion Online Data Project API or Albion Online Tools do NOT provide complete crafting recipe data, automatically fetch the recipes from the official Albion Online Wiki (https://wiki.albiononline.com/wiki/Crafting) as a fallback.  
+- The backend must detect missing or incomplete recipe data and retrieve it accordingly.
+
+---
+
+✅ 2) Market Prices  
+- Fetch live market prices for all required crafting materials and the final crafted item from the Albion Online Data Project API or Albion Online Tools.  
+- If prices are missing, display a clear warning:  
+  _“Price not found. Please check https://www.albiononline-tools.com/ or the official market manually.”_  
+- Do NOT use any static or fake prices.
+
+---
+
+✅ 3) Enchantment Display  
+- Display enchantment levels as plain numbers only (1, 2, 3, or 4).  
+- Do NOT include any plus signs (+), dots (.), or parentheses.
+
+---
+
+✅ 4) Tier & Enchantment Colors  
+- Tier colors:  
+  - T3: green  
+  - T4: blue  
+  - T5: red  
+  - T6: orange  
+  - T7: yellow  
+  - T8: white  
+- Enchantment colors:  
+  - 1: green  
+  - 2: blue  
+  - 3: purple  
+  - 4: gold
+
+---
+
+✅ 5) UI & Filters  
+- Remove the star icon from item cards.  
+- Add an enchantment filter in the item grid.  
+- Add an “Update” button near the “Last Updated” timestamp to allow manual price refresh.  
+- Implement automatic price refreshing at regular intervals while the app is open.
+
+---
+
+✅ 6) Full Functionality  
+- Ensure all craftable items are loaded completely with no missing entries.  
+- Use real-time prices and correct crafting recipes for all profit calculations.  
+- Calculate profit accurately, including usage fees, return rates, and market taxes.  
+- The app must never display fake or outdated data.
+
+---
+
+✅ 7) Testing  
+- The app must be tested **3 times like a real user would** — loading items, using filters, refreshing prices, and calculating profits.  
+- If any bugs or errors are found during testing, fix them immediately and retest until everything works perfectly.
+
+---
+
+✅ 8) Mobile Optimization (Especially iPad Mini 6)  
+- The app must be fully responsive and optimized for mobile devices, especially for iPad Mini 6 screen size.  
+- Ensure touch targets (buttons, filters, item cards) are large and easy to tap.  
+- The grid/list view must load quickly and scroll smoothly on iPad Mini 6.  
+- Design must be clean, minimal, and performant to avoid lag or stutter.  
+- Support both portrait and landscape orientations seamlessly.
+
+---
+
+**This app’s core purpose is to provide real-time, accurate profit calculations for Albion Online crafting using live data and reliable sources. Please fix all issues, implement fallbacks, and thoroughly test before delivery.**

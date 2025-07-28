@@ -1,0 +1,75 @@
+Build a complete Albion Online crafting profit calculator web application from scratch with the following detailed requirements:
+
+1) **Item Data**
+- Load the full list of all craftable Albion Online items (weapons, armor, accessories, etc.) from the Albion Online Data Project API.
+- Ensure no craftable item is missing.
+- Display items uniquely in a responsive grid layout, no duplicates.
+- Allow searching and filtering by item name, category, tier (T1-T8), and enchantment level (0-4).
+
+2) **Item Selection & Modal**
+- When a user clicks on an item, open a modal dialog.
+- In the modal, allow the user to select the desired:
+  - Tier (1 to 8)
+  - Enchantment level (0 to 4)
+  - Quantity of items to craft
+
+3) **Crafting Materials and Prices**
+- Automatically fetch the list of crafting materials required for the selected tier and enchantment from the API.
+- Automatically fetch the **current lowest market prices** for these materials from the Albion Online Data Project API.
+- Calculate the total raw material cost as the sum of (unit price × quantity) for all required materials.
+
+4) **Usage Fee**
+- Include an input for the **craft station usage fee per crafted item** (in silver).
+- Calculate total usage fee as: usage fee per item × quantity.
+
+5) **Return Rate**
+- Include an input for **return rate** (percentage, e.g., 15%) which represents the chance to get materials back when crafting.
+- Calculate the adjusted raw material cost by reducing it according to the return rate:
+  Adjusted raw material cost = raw material cost × (1 - return rate).
+
+6) **Market Tax**
+- Provide a toggle to select if the user has **Premium** or **No Premium**.
+- If Premium, apply a 4% market tax on sales.
+- If No Premium, apply an 8% market tax on sales.
+
+7) **Selling Price**
+- Automatically fetch the current lowest market sell price for the selected item (tier & enchantment) from the API.
+- Set the expected selling price as 1,000 silver less than the lowest market sell price.
+
+8) **Profit Calculation**
+- Calculate total crafting cost = adjusted raw material cost + total usage fee.
+- Calculate gross revenue = expected selling price × quantity.
+- Calculate market tax = gross revenue × applicable market tax %.
+- Calculate net profit = gross revenue - market tax - total crafting cost.
+- Display the profit and all relevant cost breakdowns clearly in the modal.
+
+9) **Images**
+- Show the correct item icon for each item.
+- If an item image is missing or unavailable, display a clear default placeholder image.
+
+10) **UI/UX**
+- The app should have a clean, intuitive, and fully responsive design, optimized for desktop and mobile.
+- Include filters, search bar, sorting by profit (highest to lowest), tier, and enchantment.
+- Display profit or loss on each item card in the grid.
+- Provide live updates to the profit calculation as users change inputs in the modal.
+
+11) **Error Handling & Completeness**
+- Ensure all API endpoints (items list, market prices, materials) are correctly called and handled.
+- Gracefully handle missing or incomplete data with fallbacks and placeholders.
+- Guarantee that all craftable items appear in the app with accurate data.
+
+12) **Tech Stack**
+- Use HTML, CSS, JavaScript for frontend.
+- Use Node.js or suitable backend to handle API calls and logic.
+- Deliver complete, ready-to-run, clean, well-commented code.
+
+13) **Additional Notes**
+- The app should **not** ask the user for the selling price; it is always calculated automatically based on market data minus 1,000 silver.
+- All inputs for quantity, usage fee, return rate, and premium toggle must be clearly labeled and easy to use.
+- Provide detailed instructions or tooltips explaining each input and calculation.
+
+---
+
+This prompt fully covers the development of a production-ready Albion Online crafting profit calculator web app that dynamically pulls real market data, calculates crafting costs, taxes, return rates, and profits, and offers a professional, user-friendly interface.
+
+Please provide the full, working source code (frontend and backend) implementing these requirements.
